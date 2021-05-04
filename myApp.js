@@ -1,11 +1,15 @@
 var express = require('express');
 var app = express();
 
-app.get("/", (req, res)=>{
-    res.send("Hello World!")
+console.log("Hello World" )
+
+// app.get("/", (req, res)=>{
+//     res.send("Hello Express")
+// })
+
+app.get("/", (req, res) => {
+  res.sendFile(`${__dirname}/views/index.html`)
 })
-
-
 
 
 
